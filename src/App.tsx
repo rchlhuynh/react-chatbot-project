@@ -21,7 +21,7 @@ function App() {
   }, [])
 
   const [chatMessages, setChatMessages] = useState(
-    JSON.parse(localStorage.getItem('messages') || '')
+    JSON.parse(localStorage.getItem('messages') || '[]')
   ||  [{
     message: 'hello chatbot',
     sender: 'user',
